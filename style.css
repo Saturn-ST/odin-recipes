@@ -1,0 +1,88 @@
+/* yellow: #DFA238 */
+/* red: #B73928 */
+/* green: #6C692D */
+/* orange: #CC6627 */
+*{
+    margin: auto;
+    padding: auto;
+}
+body{
+    font-family: Verdana;
+    background-color: #DFA238;
+    color: #B73928;
+    font-weight: 200;
+    text-align: center;
+}
+.heading{
+    padding-top: 60px;
+    font-size: 4em;
+    font-weight: 300;
+}
+.subheading{
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 200;
+    color: #CC6627;
+}
+h3{
+    padding-top: 30px;
+    font-size: 2em;
+    font-weight: 200;
+
+}
+ul{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 20px;
+    width: 100%;
+    position: inherit;
+}
+li{
+    /* border: 1px solid #6C692D; */
+    padding: 25px;
+    float: left;
+    /* width: 18%; */
+}
+.recipes{
+    width: 80%;
+    /* border: 10px solid #6C692D; */
+    margin: 25px auto;
+    padding-bottom: 25px;
+}
+.recipes.savory{
+    background-color: #6C692D;
+    color: #DFA238;
+
+}
+.recipes.sweet{
+    background-color: #B73928;
+    color: #DFA238;
+}
+li a{
+    text-decoration: none;
+    color: #DFA238;
+}
+li a:hover{
+    color: #CC6627;
+}
+img{
+    width: 250px;
+    height: auto;
+}
+figure{
+    border: 8px solid #6C692D;
+    width: 40%;
+}
+figure img{
+    margin-top: 20px;
+}
+figcaption{
+    color: #B73928;
+    width: 250px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+figcaption:hover{
+    color: #6C692D;
+}
