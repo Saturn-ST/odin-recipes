@@ -2,14 +2,23 @@
 /* red: #B73928 */
 /* green: #6C692D */
 /* orange: #CC6627 */
+
+/* size: 5px, 5%, 5vw, 5em, 5rem */
+/* Content box: The area where your content is 
+displayed; size it using properties like 
+inline-size and block-size or width and height. */
+html {
+    box-sizing: border-box;
+    
+  }
 *{
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 body{
     font-family: Verdana;
     background-color: #B73928;
-    text-align: center;
 }
 menu {
     position: fixed;
@@ -17,67 +26,80 @@ menu {
     top: 0;
     width: 100%;
     background-color:#CC6627;
-    color: white;
+    /* color: white; */
     /* text-align: center; */
+    /* animation: rainbow 10s linear infinite; */
+
   }
-  li{
+  .nav-bar.bar{
+    height: 3em;
+  }
+  .nav.item{
     display: inline;
     list-style-type: none;
   }
-main{
 
+main{
+    margin: 80px auto 20px;
+    padding: 0;
+    width: 95%;
 }
 a{
+    /* display: inline; */
     text-decoration: none;
-    color: white;
+    /* color: white; */
+
 }
-div{
-    margin: 5% 15%;
+.contain-box.lg{
+    /* margin: 5% 15%; */
     /* padding: auto; */
     /* float: center; */
     /* width: 80%; */
-
+    
 }
-article{
+.window.box{
     background-color: white;
-    width: 200px;
-    /* height: 150px; */
+    width: 18vw;
     margin: 6px;
-    float: left;
-    border-radius: 10%;
+    display: inline-block;
+    border-radius: 1em;
+
     /* color: white; */
+    /* float: left; */
 }
-.header h1{
-    font-size: 1rem;
+.header.first.box{
     font-weight: 500;
-    color: black;
+    /* color: black; */
+    height: 10vw;
 }
-.first{
-    height: 100px;
-}
-.second{
-    background-color: #CC6627;
+.second.box{
+    /* background-color: #CC6627; */
 }
 .second, .third, .sixth, .seventh{
-    height: 200px;
+    height: 15vw;
 }
 .fourth{
-    height: 120px;
+    height: 8vw;
 }
-.fourth, .fifth{
-    background-color: #DFA238;
+.fourth.box, .fifth.box{
+    /* background-color: #DFA238; */
 }
-.fifth, .eighth{
-    height: 300px;
+.fifth.box, .eighth.box{
+    height: 26vw;
+    margin-top: -60px;
 }
 .third, .sixth, .eighth{
     color: black;
 }
-.seventh{
-    background-color: #6C692D;
+.seventh.box{
+    margin-top: -1em;
+    /* background-color: #6C692D; */
+}
+.eighth.box{
+    margin-top: -2em;
 }
 img{
-    height: 200px;
+    block-size: auto;
     width: auto;
     border-radius: 10%;
 }
@@ -88,7 +110,6 @@ footer {
     width: 100%;
     background-color: #DFA238;
     color: white;
-    text-align: center;
   }
 
 
