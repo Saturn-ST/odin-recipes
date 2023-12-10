@@ -20,7 +20,7 @@ body{
     background-color: #B73928;
 }
 menu {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     top: 0;
     width: 100%;
@@ -97,29 +97,11 @@ a{
 .eighth.box{
     margin-top: -2em;
 }
-img{
-    block-size: auto;
-    width: auto;
-    border-radius: 10%;
-}
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #DFA238;
-    color: white;
-  }
+
+
 
 /* ---RECIPE PAGES--- */
-
-
-/* .recipe-page.body{
-    background-color: rgb(223, 162, 56, 0.9);
-    text-align: center;
-}
-
-#photo{
+.recipe-page.body{
 	background-image: url(https://thelemonbowl.com/wp-content/uploads/2021/03/plate-of-mexican-street-tacos-horizontal.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -129,118 +111,43 @@ footer {
 .clear{
 	height: 60em;
 }
+.scroll-past{
+    display: block;
+    width: 30%;
+    background-color: #DFA238;
+    color: white;
+    margin: 0 auto 15vw;
+    border-radius: 1em;
+    border-top: 1em solid #DFA238;
+    border-bottom: 1em solid #DFA238;
+
+}
 .heading{
-    width: 60%;
-    margin: .5em auto;
+    /* padding-top: 1em; */
 
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .heading{
-    padding-top: 2em;
-    font-size: 3em;
-    font-weight: 900;
-    color: #B73928;
 }
-.subheading{
-    font-size: 1.5em;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    color:#6C692D;
-}
-h3{
-    padding-top: 30px;
-    font-size: 2em;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-a:hover{
-    opacity: .90;
-}
-ul{
-    display: inline-block;
+.ingredients li, .directions li{
     list-style-type: none;
-    margin-top: 20px;
-    width: 100%;
-    position: inherit;
+    text-align: left;
+    /* padding: .2em 1em .2em 0; */
+    /* padding-left: 3em; */
+    padding-top: .5em;
 }
-li{
-    /* border: 1px solid #6C692D; */
-    /* padding: 25px;
-    float: left;
-}
-.recipes{
-    width: 80%;
-    margin: 25px auto;
-    padding-bottom: 25px;
-}
-.recipes.savory{
-    background-color: #6C692D; */
-    /* color: #DFA238; */
-/* 
-}
-.recipes.sweet{
-    background-color: #B73928; */
-    /* color: #DFA238; */
-/* }
-li a{
-    text-decoration: none; */
-    /* color: #DFA238; */
-/* }
-img{
-    width: 250px;
-    height: auto;
-}
-.recipes img{
-    opacity: .75;
-}
-.recipes img:hover{
-    opacity: 1;
+.ingredients li{
+    padding-left: 3em;
 }
 
-figure{
-    background-color: #6C692D; */
-    /* border: 8px solid #6C692D; */
-    /* width: 80%;
+.directions li{
+    padding-left: 1.5em;
 }
-figure img{
-    margin-top: 40px;
-    width: 400px;
-}
-figcaption{
-    width: 250px;
-    font-size: 15px;
-    padding-bottom: 40px;
-}
-section{
-    width: 80%;
-    background-color: #CC6627;
-    margin-top: 30px;
-    padding: 40px auto;
-} */
-/* article ol li{
-    background-color: #CC6627;
-    width: 90%;
-    text-align: left;
-}
-article p{
-    text-align: center;
-}
-footer{
-    background-color: #CC6627;
-    width: 80%; }*/
+
+footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #DFA238;
+    color: white;
+  }
+
+
