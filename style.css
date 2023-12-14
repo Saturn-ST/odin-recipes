@@ -7,6 +7,7 @@
 /* Content box: The area where your content is 
 displayed; size it using properties like 
 inline-size and block-size or width and height. */
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -16,11 +17,13 @@ html {
     text-align: center;
 }
 body{
-    font-family: Verdana;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: .9em;
     background-color: #B73928;
 }
 menu {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     top: 0;
     width: 100%;
@@ -44,82 +47,65 @@ main{
     width: 95%;
 }
 a{
-    /* display: inline; */
     text-decoration: none;
-    /* color: white; */
-
 }
-.contain-box.lg{
-    /* margin: 5% 15%; */
-    /* padding: auto; */
-    /* float: center; */
-    /* width: 80%; */
-    
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7em;
+    width: 95%;
+    margin: auto;
 }
-.window.box{
+.box{
     background-color: white;
-    width: 18vw;
-    margin: 6px;
-    display: inline-block;
+    width: 13em;
     border-radius: 1em;
-
-    /* color: white; */
-    /* float: left; */
+    align-items: flex-end;
 }
-.header.first.box{
-    font-weight: 500;
-    /* color: black; */
-    height: 10vw;
+img.logo{
+    height: 5.5vw;
+    border-radius: 50%;
+    margin-top: -5vw;
+    border: 2px solid #DFA238;
 }
-.second.box{
-    /* background-color: #CC6627; */
-}
-.second, .third, .sixth, .seventh{
-    height: 15vw;
-}
-.fourth{
+.one{
     height: 8vw;
+    margin-top: 4vw;
 }
-.fourth.box, .fifth.box{
-    /* background-color: #DFA238; */
+.bold{
+    font-weight: 600;
 }
-.fifth.box, .eighth.box{
-    height: 26vw;
-    margin-top: -60px;
+.tilt{
+    font-style: italic;
 }
-.third, .sixth, .eighth{
+.two{
+    display: flex;
+}
+img.lid{
+    width: 4vw;
+    margin-top: 1em;
+    self-align: right;
+}
+
+.four{
+    height: 12vw;
+}
+.two, .three, .six, .seven{
+    height: 18vw;
+}
+.five, .eight{
+    height: 24vw;
+    margin-top: -6vw;
+}
+.three, .six, .eight{
     color: black;
+    display: flex;
 }
-.seventh.box{
-    margin-top: -1em;
-    /* background-color: #6C692D; */
-}
-.eighth.box{
-    margin-top: -2em;
-}
-img{
-    block-size: auto;
-    width: auto;
-    border-radius: 10%;
-}
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #DFA238;
-    color: white;
-  }
+
+
 
 /* ---RECIPE PAGES--- */
-
-
-/* .recipe-page.body{
-    background-color: rgb(223, 162, 56, 0.9);
-    text-align: center;
-}
-
-#photo{
+.recipe-page.body{
 	background-image: url(https://thelemonbowl.com/wp-content/uploads/2021/03/plate-of-mexican-street-tacos-horizontal.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -129,118 +115,43 @@ footer {
 .clear{
 	height: 60em;
 }
+.scroll-past{
+    display: block;
+    width: 30%;
+    background-color: #DFA238;
+    color: white;
+    margin: 0 auto 15vw;
+    border-radius: 1em;
+    border-top: 1em solid #DFA238;
+    border-bottom: 1em solid #DFA238;
+
+}
 .heading{
-    width: 60%;
-    margin: .5em auto;
+    /* padding-top: 1em; */
 
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .heading{
-    padding-top: 2em;
-    font-size: 3em;
-    font-weight: 900;
-    color: #B73928;
 }
-.subheading{
-    font-size: 1.5em;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    color:#6C692D;
-}
-h3{
-    padding-top: 30px;
-    font-size: 2em;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-a:hover{
-    opacity: .90;
-}
-ul{
-    display: inline-block;
+.ingredients li, .directions li{
     list-style-type: none;
-    margin-top: 20px;
-    width: 100%;
-    position: inherit;
+    text-align: left;
+    /* padding: .2em 1em .2em 0; */
+    /* padding-left: 3em; */
+    padding-top: .5em;
 }
-li{
-    /* border: 1px solid #6C692D; */
-    /* padding: 25px;
-    float: left;
-}
-.recipes{
-    width: 80%;
-    margin: 25px auto;
-    padding-bottom: 25px;
-}
-.recipes.savory{
-    background-color: #6C692D; */
-    /* color: #DFA238; */
-/* 
-}
-.recipes.sweet{
-    background-color: #B73928; */
-    /* color: #DFA238; */
-/* }
-li a{
-    text-decoration: none; */
-    /* color: #DFA238; */
-/* }
-img{
-    width: 250px;
-    height: auto;
-}
-.recipes img{
-    opacity: .75;
-}
-.recipes img:hover{
-    opacity: 1;
+.ingredients li{
+    padding-left: 3em;
 }
 
-figure{
-    background-color: #6C692D; */
-    /* border: 8px solid #6C692D; */
-    /* width: 80%;
+.directions li{
+    padding-left: 1.5em;
 }
-figure img{
-    margin-top: 40px;
-    width: 400px;
-}
-figcaption{
-    width: 250px;
-    font-size: 15px;
-    padding-bottom: 40px;
-}
-section{
-    width: 80%;
-    background-color: #CC6627;
-    margin-top: 30px;
-    padding: 40px auto;
-} */
-/* article ol li{
-    background-color: #CC6627;
-    width: 90%;
-    text-align: left;
-}
-article p{
-    text-align: center;
-}
-footer{
-    background-color: #CC6627;
-    width: 80%; }*/
+
+footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #DFA238;
+    color: white;
+  }
+
+
