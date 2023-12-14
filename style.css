@@ -2,6 +2,13 @@
 /* red: #B73928 */
 /* green: #6C692D */
 /* orange: #CC6627 */
+/* --Re-imagined Palette-- */
+/* Yellow: #FFD600 */
+/* Green: #A19F44 */
+/* Pink: #FF1D59; */
+/* Beige: #FFEAB1 */
+/* Blue-green: #899587 */
+
 
 /* size: 5px, 5%, 5vw, 5em, 5rem */
 /* Content box: The area where your content is 
@@ -21,17 +28,15 @@ body{
     font-weight: 300;
     font-size: .9em;
     background-color: #B73928;
+    background-image: url(https://th.bing.com/th/id/OIP.KX0f7jqvrcQ5CZkpC92BIAHaHa?w=626&h=626&rs=1&pid=ImgDetMain);
+    
 }
 menu {
-    /* position: fixed; */
-    left: 0;
-    top: 0;
+    display: flex;
+    align-items: center;
     width: 100%;
     background-color:#CC6627;
-    /* color: white; */
-    /* text-align: center; */
-    /* animation: rainbow 10s linear infinite; */
-
+    box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
   }
   .nav-bar.bar{
     height: 3em;
@@ -42,34 +47,42 @@ menu {
   }
 
 main{
-    margin: 80px auto 20px;
-    padding: 0;
+    margin: 2em auto;
+    padding: auto;
     width: 95%;
 }
+
 a{
     text-decoration: none;
 }
 .flex-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
     gap: .7em;
-    width: 95%;
     margin: auto;
+    /* margin-top: -4.5vw;
+    margin-bottom: 3vw; */
+
 }
 .box{
     background-color: white;
-    width: 13em;
+    /* width: 13em; */
+    flex-basis: 13em;
     border-radius: 1em;
     align-items: flex-end;
+
 }
 img.logo{
-    height: 5.5vw;
     border-radius: 50%;
     margin-top: -5vw;
     border: 2px solid #DFA238;
+    width: 4em;
+    flex-shrink: 0; 
 }
 .one{
-    height: 8vw;
+    height: 10vw;
     margin-top: 4vw;
 }
 .bold{
@@ -88,13 +101,19 @@ img.lid{
 }
 
 .four{
-    height: 12vw;
+    height: 14vw;
+}
+.one, .two, .three, .four{
+    align-self: flex-start;
+}
+.five, .six, .seve, .eight{
+    align-self: flex-end;
 }
 .two, .three, .six, .seven{
-    height: 18vw;
+    height: 20vw;
 }
 .five, .eight{
-    height: 24vw;
+    height: 26vw;
     margin-top: -6vw;
 }
 .three, .six, .eight{
@@ -152,6 +171,7 @@ footer {
     width: 100%;
     background-color: #DFA238;
     color: white;
+    box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
   }
 
 
