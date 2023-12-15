@@ -1,19 +1,10 @@
-/* yellow: #DFA238 */
-/* red: #B73928 */
-/* green: #6C692D */
-/* orange: #CC6627 */
 /* --Re-imagined Palette-- */
-/* Yellow: #FFD600 */
+/* Yellow: #F1CD00 */
 /* Green: #A19F44 */
-/* Pink: #FF1D59; */
-/* Beige: #FFEAB1 */
-/* Blue-green: #899587 */
+/* Adobe red: #BF3700 */
+/* Orange: #F38800 */
 
 
-/* size: 5px, 5%, 5vw, 5em, 5rem */
-/* Content box: The area where your content is 
-displayed; size it using properties like 
-inline-size and block-size or width and height. */
   @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 html {
     box-sizing: border-box;
@@ -27,51 +18,55 @@ body{
     font-family: Raleway, sans-serif;
     font-weight: 300;
     font-size: .9em;
-    background-color: #B73928;
+    background-color: #F38800;
     background-image: url(https://th.bing.com/th/id/OIP.KX0f7jqvrcQ5CZkpC92BIAHaHa?w=626&h=626&rs=1&pid=ImgDetMain);
-    
+    color: white; 
 }
-menu {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color:#CC6627;
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    font-weight: 400;
+}
+.flex-nav {
+    padding: 1em;
+    background-color:#BF3700;
     box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
   }
-  .nav-bar.bar{
-    height: 3em;
-  }
-  .nav.item{
-    display: inline;
+  .nav-bar{
+    display: flex;
+    gap: 2em;
     list-style-type: none;
+    align-items: baseline;
+    padding: 0%;
+    margin-right: 8em;
+  }
+  .nav-item.logo{
+    margin-right: auto;
+
   }
 
 main{
+    display: flex;
     margin: 2em auto;
     padding: auto;
-    width: 95%;
-}
-
-a{
-    text-decoration: none;
 }
 .flex-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
     gap: .7em;
     margin: auto;
-    /* margin-top: -4.5vw;
-    margin-bottom: 3vw; */
-
+    flex-basis: 54.8em;
 }
 .box{
     background-color: white;
-    /* width: 13em; */
-    flex-basis: 13em;
+    /* flex-basis: 13em; */
+    flex-basis: 22%;
     border-radius: 1em;
     align-items: flex-end;
+    /* min-width: 0px; */
 
 }
 img.logo{
@@ -81,9 +76,35 @@ img.logo{
     width: 4em;
     flex-shrink: 0; 
 }
+img.lid{
+    width: 1.5em;
+    background-color: #FFEAB1;
+    border-radius: 50%;
+    margin-bottom: auto;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: 1.5em;
+}
+img.arrow{
+    width: 3em;
+    margin-top: auto;
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: -3.5em;
+}
+.food-name{
+    margin-top: auto;
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+    text-align: left;
+}
+.food-name.more{
+    padding-bottom: 4em;
+}
 .one{
     height: 10vw;
     margin-top: 4vw;
+    color: black;
 }
 .bold{
     font-weight: 600;
@@ -93,15 +114,38 @@ img.logo{
 }
 .two{
     display: flex;
+    background-color: #BF3700;
 }
-img.lid{
-    width: 4vw;
-    margin-top: 1em;
-    self-align: right;
+.three{
+    background-image: url("https://www.wellplated.com/wp-content/uploads/2020/12/Gound-Beef-and-Potatoes-Skillet.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
 }
-
 .four{
     height: 14vw;
+    background-color: #F38800;
+    display: flex;
+}
+.five{
+    background-color: #F38800;
+    display: flex;
+}
+.six{
+    background-image: url("https://asimplepantry.com/wp-content/uploads/2016/01/Easy-Mexican-Recipes-Carne-Asada-Mexican-Street-Tacos-4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.seven{
+    background-color: #A19F44;
+    display: flex;
+}
+.eight{
+    background-image: url("https://nibblesandfeasts.com/wp-content/uploads/2020/06/Avocado-Queso-Fresco-Jalape%C3%B1o-Torta.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
 }
 .one, .two, .three, .four{
     align-self: flex-start;
@@ -117,8 +161,8 @@ img.lid{
     margin-top: -6vw;
 }
 .three, .six, .eight{
-    color: black;
     display: flex;
+    text-shadow: 1px 1px 2px black;
 }
 
 
@@ -165,13 +209,23 @@ img.lid{
 }
 
 footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #DFA238;
-    color: white;
+    display: flex;
+    background-color: #A19F44;
     box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
   }
-
+.footer-nav{
+    list-style-type: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .footer-item{
+    display: inline;
+    margin-top: 1em;
+  }
+  .copyright, .footer-nav{
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: .5em;
+    margin-left: .5em;
+  }
 
