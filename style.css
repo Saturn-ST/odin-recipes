@@ -14,14 +14,21 @@ html {
 }
 body{
     font-family: Raleway, sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: .9em;
     background-color: #F38800;
     background-image: url(https://th.bing.com/th/id/OIP.KX0f7jqvrcQ5CZkpC92BIAHaHa?w=626&h=626&rs=1&pid=ImgDetMain);
     background-attachment: fixed;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     color: white; 
     overflow-x: scroll;
+    letter-spacing: .2rem;
+}
+h1{
+    font-weight: 300;
+}
+h2, h3 {
+    font-weight: inherit;
 }
 a{
     text-decoration: none;
@@ -45,10 +52,16 @@ a:hover{
     align-items: baseline;
     padding: 0%;
     margin-right: 8em;
+    font-size: 1.2rem;
+    /* text-shadow: 1px 1px 1px #F1CD00; */
+}
+.nav-item{
+    padding: .5rem;
 }
 .nav-item.logo{
+    margin: 0;
     margin-right: auto;
-
+    
 }
 
 main{
@@ -170,15 +183,15 @@ img.arrow{
 footer {
     background-color: #A19F44;
     box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
-    padding: 1em;
     position: fixed;
     width: 100%;
     bottom: 0;
+    text-align: center;
+    padding-top: 1rem;
   }
 .footer-nav{
-    margin: 1em auto;
+    margin: auto;
   }
-
 
 
 /* ---RECIPE PAGES--- */
@@ -219,13 +232,36 @@ footer {
 
 
   /* ---LIST PAGES--- */
+.flex-nav#list-nav {
+    padding: 1em;
+    background-image: url("https://th.bing.com/th/id/OIP.KX0f7jqvrcQ5CZkpC92BIAHaHa?w=626&h=626&rs=1&pid=ImgDetMain");
+    box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#list-page-nav{
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+    align-items: baseline;
+    padding: 0%;
+    margin-right: 8em;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.2rem;
+}
+#list-page-nav .nav-item:hover{
+    background-color: #A19F44;
+}
+body#list-page{
+    background-color: #BF3700;
+    background-image: none;
+}
+
 .lists-container{
     width: 200%;
     display: flex;
     gap: 3em;
-}
-.lists-container:hover{
-
 }
 .heading{
     padding-top: .5em;
@@ -240,9 +276,10 @@ footer {
     background-color: #F38800;
     color: white;
     border-radius: 1em;
-    border-top: 1em solid #F38800;
+    border-top: 1em solid rgb(243, 136, 0);
     border-bottom: 1em solid #F38800;
     flex: 1 1 5em;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0, .3);
 }
 .list >ul> li{
 list-style-type: none;
@@ -257,4 +294,21 @@ padding-left: 2em;
 #last-list{
     margin-right: 2em;
 }
+.lists-footer{
+    background-image: url("https://th.bing.com/th/id/OIP.KX0f7jqvrcQ5CZkpC92BIAHaHa?w=626&h=626&rs=1&pid=ImgDetMain");
+    /* text-shadow: 3px 3px 3px black; */
+    /* text-shadow: black 1px 0 10px; */
+    background-repeat: repeat;
+}
+.lists-footer ul{
+    text-align: center;
+}
+.green-film{
+    background-color: rgb(161, 159, 68, .3);
+}
 
+footer li{
+    text-shadow: black 2px 0 10px;
+    display: inline-block;
+    font-size: .7rem;
+}
