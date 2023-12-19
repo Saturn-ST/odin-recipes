@@ -154,8 +154,12 @@ img.arrow{
     display: flex;
 }
 .seven{
+    background-image: url("https://drhyman.com/wp-content/uploads/2010/05/Asparagus-with-Roasted-Garlic-Olive-Oil-and-Red-Onions1.jpg");
+    background-size: cover;
+    background-position: center;
     background-color: #A19F44;
     display: flex;
+    /* link to the recipe website: https://www.foodnetwork.com/recipes/tyler-florence/roasted-asparagus-recipe-1944414 */
 }
 .eight{
     background-image: url("https://nibblesandfeasts.com/wp-content/uploads/2020/06/Avocado-Queso-Fresco-Jalape%C3%B1o-Torta.jpg");
@@ -195,9 +199,28 @@ footer {
 
 
 /* ---RECIPE PAGES--- */
+
+.recipes-container{
+    display: flex;
+    gap: 2em;
+}
+
+.clear-scroll-past{
+    /* background-color: #F38800; */
+    color: #BF3700;
+    border-radius: 1em;
+    flex: 1 2 3em;
+    box-shadow: 1px 1px 1px rgb(255, 255, 255, .3);
+    background-color: #DFA238;
+}
+.clear-scroll-past img{
+    border-radius: 1em; 
+    width: 20rem;
+}
+
 .recipe-page.body{
-	background-image: url(https://thelemonbowl.com/wp-content/uploads/2021/03/plate-of-mexican-street-tacos-horizontal.jpg);
-    background-repeat: no-repeat;
+	background-image: url("https://thelemonbowl.com/wp-content/uploads/2021/03/plate-of-mexican-street-tacos-horizontal.jpg");
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -205,17 +228,7 @@ footer {
 .clear{
 	height: 60em;
 }
-.scroll-past{
-    /* display: block; */
-    /* width: 30%; */
-    /* background-color: #F38800; */
-    /* color: white; */
-    /* margin: 0 auto 15vw; */
-    /* border-radius: 1em; */
-    /* border-top: 1em solid #F38800; */
-    /* border-bottom: 1em solid #F38800; */
 
-}
 /* .ingredients li, .directions li{
     list-style-type: none;
     text-align: left;
