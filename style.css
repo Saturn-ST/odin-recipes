@@ -7,7 +7,7 @@ body{
 
 /* TOP NAVIGATION SECTION  */
 .navigation{
-    background-color: #F5B74B;
+    background-color: #fff;
     margin: 0;
     position: fixed;
     width: 100%;
@@ -23,11 +23,11 @@ body{
 }
 .navigation ul a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 h1{
-    font-weight: 600;
-    font-size: 2.5rem;
+    font-weight: 200;
+    font-size: 3rem;
 }
 h2{
     padding-left: 3rem;
@@ -41,26 +41,25 @@ h2{
     justify-content: space-around;
     width: 80%;
     margin: auto;
-    color: #F5B74B;
     padding-top: 6rem;
 }
 .about-img{
     height: 25rem;
-    width: 20rem;
-    background-image: url("logo.jpg");
+    width: 25rem;
+    background-image: url("logo.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
 }
 .about p{
-    width: 25rem;
-    font-size: .9rem;
+    width: 30rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
 /* RECIPES SECTION  */
 .display{
-    background-color: #86BD5F;
+    background-color: #BF3700;
     color: #fff;
     padding: 2rem 0 6rem;
     margin: 0;
@@ -128,30 +127,35 @@ h2{
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 2rem 4rem;
+    align-items: flex-start;
     margin: 0;
+    padding: 3rem;
+    height: 60vh;
 }
 .articles h2{
     padding: 0;
+    margin: 0;
+}
+.articles h3{
+    padding: 0;
+    font-weight: 400;
 }
 .articles div{
     padding-top: 7rem 0;
     width: 25rem;
 }
 .articles ul{
-    font-size: .8rem;
     list-style: none;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 .articles ul li:nth-child(2){
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 
 
 /* INGREDIENTS SECTION  */
 .display.ingredients{
-    background-color: #16703C;
+    background-color: #F5B74B;
 }
 .ingredients .dsp-scroll div:first-child .img-div{
     background-image: url("https://th.bing.com/th/id/R.7b5616d0b04968063ad625770c7910f9?rik=gZ1%2b%2f5by%2fYmtog&riu=http%3a%2f%2fsafimex.com%2fwp-content%2fuploads%2f2018%2f08%2f20-Exotic-Fruits-You-Must-Try-at-Least-Once-1024x880.png&ehk=oIzCzv0eHbGe37jsfIW2RdmEWm3qRD3ka1mQa4OS5fk%3d&risl=&pid=ImgRaw&r=0");
@@ -181,8 +185,8 @@ h2{
   
 /* FOOTER SECTION  */
 .footer-nav {
-    background-color: #F5B74B;
-    color: #fff;
+    /* background-color: #F5B74B; */
+    /* color: #fff; */
     width: 100%;
     bottom: 0;
     text-align: center;
@@ -193,6 +197,6 @@ h2{
     list-style-type: none;
   }
 .footer-nav a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
