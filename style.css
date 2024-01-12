@@ -1,330 +1,198 @@
-/* --Re-imagined Palette-- */
-/* Yellow: #F1CD00 */
-/* Green: #A19F44 */
-/* Adobe red: #BF3700 */
-/* Orange: #F38800 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
-/* The positions on the home page would be easier to manage with {position: relative; top: 00px; left: 00px; etc.!} */
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-html {
-    box-sizing: border-box;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
 body{
-    font-family: Raleway, sans-serif;
-    font-weight: 200;
-    font-size: .9em;
-    background-color: #F38800;
-    background-image: url(https://th.bing.com/th/id/OIP.KX0f7jqvrcQ5CZkpC92BIAHaHa?w=626&h=626&rs=1&pid=ImgDetMain);
-    background-attachment: fixed;
-    background-repeat: repeat;
-    color: white; 
-    overflow-x: scroll;
-    letter-spacing: .2rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
-h1{
-    font-weight: 300;
-}
-h2, h3 {
-    font-weight: inherit;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-a:hover{
-    font-weight: 400;
-}
-.flex-nav {
-    padding: 1em;
-    background-color:#BF3700;
-    box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
-    position: relative; /* options: fixed, absolute */
-    top: 0;
+
+/* TOP NAVIGATION SECTION  */
+.navigation{
+    background-color: #F5B74B;
+    margin: 0;
+    position: fixed;
     width: 100%;
 }
-.nav-bar{
+.navigation ul{
     display: flex;
-    gap: 2em;
-    list-style-type: none;
-    align-items: baseline;
-    padding: 0%;
-    margin-right: 8em;
-    font-size: 1.2rem;
-    /* text-shadow: 1px 1px 1px #F1CD00; */
-}
-.nav-item{
-    padding: .5rem;
-}
-.nav-item.logo{
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
     margin: 0;
-    margin-right: auto;
-    
+    padding: 1.5rem 5rem;
+}
+.navigation ul a{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+h2{
+    padding-left: 3rem;
+    font-weight: 300;
+    font-size: 3rem;
 }
 
-main{
+/* ABOUT SECTION  */
+.about{
     display: flex;
-    margin: 2em auto;
-    padding-top: 60px; /* creates the space after the nav bar*/
-    padding-bottom: 60px; /* creates the space after the footer*/
-}
-.flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: .7em;
+    justify-content: space-around;
+    width: 80%;
     margin: auto;
-    flex-basis: 54.8em;
+    color: #F5B74B;
+    padding-top: 6rem;
 }
-.box{
-    background-color: white;
-    flex-basis: 22%;
-    border-radius: 1em;
-    align-items: flex-end;
+.about-img{
+    height: 25rem;
+    width: 20rem;
+    background-image: url("logo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
-img.logo{
-    border-radius: 50%;
-    margin-top: -5vw;
-    border: 2px solid #DFA238;
-    width: 4em;
-    flex-shrink: 0; 
+.about p{
+    width: 25rem;
+    font-size: .9rem;
+    font-weight: 300;
 }
-img.lid{
-    width: 1.5em;
-    background-color: #FFEAB1;
-    border-radius: 50%;
-    margin-bottom: auto;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: 1.5em;
+
+/* RECIPES SECTION  */
+.display{
+    background-color: #86BD5F;
+    color: #fff;
+    padding: 2rem 0 6rem;
+    margin: 0;
 }
-img.arrow{
-    width: 3em;
-    margin-top: auto;
-    margin-bottom: 1em;
-    margin-right: auto;
-    margin-left: -3.5em;
-}
-.food-name{
-    margin-top: auto;
-    padding-left: 1em;
-    padding-bottom: 1.5em;
-    text-align: left;
-}
-.food-name.more{
-    padding-bottom: 4em;
-}
-.one{
-    height: 10vw;
-    margin-top: 4vw;
-    color: black;
+.dsp-scroll{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem;
     text-align: center;
 }
-.bold{
-    font-weight: 600;
-}
-.tilt{
-    font-style: italic;
-}
-.two{
+.dsp-scroll div{
+    background-color: #fff;
+    color: #000;
+    height: 20rem;
+    width: 14rem;
+    border-radius: 1rem;
     display: flex;
-    background-color: #BF3700;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
-.three{
-    background-image: url("https://www.wellplated.com/wp-content/uploads/2020/12/Gound-Beef-and-Potatoes-Skillet.jpg");
-    background-size: cover;
+.dsp-scroll div p{
+    font-size: .8rem;
+    width: 12rem;
+}
+
+.img-div{
+    background-position: top;
+    background-size: 100%;
+    margin-top: .5rem;
+}
+.recipes .dsp-scroll div:first-child .img-div{
+    background-image: url("https://www.sugarandsoul.co/wp-content/uploads/2019/11/salt-baked-sweet-potatoes-recipe-1-750x1125.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.recipes .dsp-scroll div:nth-child(2) .img-div{
+    background-image: url("https://www.thechunkychef.com/wp-content/uploads/2017/07/Oven-Roasted-Corn-on-the-Cob-5.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.recipes .dsp-scroll div:nth-child(3) .img-div{
+    background-image: url("https://natashaskitchen.com/wp-content/uploads/2018/01/Cheesy-Smashed-Potatoes-3.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.recipes .dsp-scroll div:nth-child(4) .img-div{
+    background-image: url("https://th.bing.com/th/id/OIP.OYvltDBBn87PZPJT4X85TAHaLH?rs=1&pid=ImgDetMain");
+    width: 13rem;
+    height: 14rem;
+}
+.recipes .dsp-scroll div:nth-child(5) .img-div{
+    background-image: url("https://www.loveandotherspices.com/wp-content/uploads/2022/11/air-fryer-pumpkin-3-360x540.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+
+/* ARTICLES SECTIONS  */
+.articles{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://puntoseguido.upc.edu.pe/wp-content/uploads/2020/05/cook-scaled.jpg");
     background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    margin: 0;
 }
-.four{
-    height: 14vw;
-    background-color: #F38800;
-    display: flex;
+.articles h2{
+    padding: 0;
 }
-.five{
-    background-color: #F38800;
-    display: flex;
+.articles div{
+    padding-top: 7rem 0;
+    width: 25rem;
 }
-.six{
-    background-image: url("https://asimplepantry.com/wp-content/uploads/2016/01/Easy-Mexican-Recipes-Carne-Asada-Mexican-Street-Tacos-4.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
+.articles ul{
+    font-size: .8rem;
+    list-style: none;
+    padding-bottom: 1rem;
 }
-.seven{
-    background-image: url("https://drhyman.com/wp-content/uploads/2010/05/Asparagus-with-Roasted-Garlic-Olive-Oil-and-Red-Onions1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-color: #A19F44;
-    display: flex;
-    /* link to the recipe website: https://www.foodnetwork.com/recipes/tyler-florence/roasted-asparagus-recipe-1944414 */
+.articles ul li:nth-child(2){
+    padding-top: 2rem;
 }
-.eight{
-    background-image: url("https://nibblesandfeasts.com/wp-content/uploads/2020/06/Avocado-Queso-Fresco-Jalape%C3%B1o-Torta.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
+
+
+/* INGREDIENTS SECTION  */
+.display.ingredients{
+    background-color: #16703C;
 }
-.one, .two, .three, .four{
-    align-self: flex-start;
+.ingredients .dsp-scroll div:first-child .img-div{
+    background-image: url("https://th.bing.com/th/id/R.7b5616d0b04968063ad625770c7910f9?rik=gZ1%2b%2f5by%2fYmtog&riu=http%3a%2f%2fsafimex.com%2fwp-content%2fuploads%2f2018%2f08%2f20-Exotic-Fruits-You-Must-Try-at-Least-Once-1024x880.png&ehk=oIzCzv0eHbGe37jsfIW2RdmEWm3qRD3ka1mQa4OS5fk%3d&risl=&pid=ImgRaw&r=0");
+    width: 13rem;
+    height: 14rem;
 }
-.five, .six, .seve, .eight{
-    align-self: flex-end;
+.ingredients .dsp-scroll div:nth-child(2) .img-div{
+    background-image: url("https://cdn-prod.medicalnewstoday.com/content/images/articles/245/245259/selection-of-nuts-and-seeds.jpg");
+    width: 13rem;
+    height: 14rem;
 }
-.two, .three, .six, .seven{
-    height: 20vw;
+.ingredients .dsp-scroll div:nth-child(3) .img-div{
+    background-image: url("https://haleo.co.uk/wp-content/uploads/2014/10/NIGHTSHADES-1024x1020.jpg");
+    width: 13rem;
+    height: 14rem;
 }
-.five, .eight{
-    height: 26vw;
-    margin-top: -6vw;
+.ingredients .dsp-scroll div:nth-child(4) .img-div{
+    background-image: url("https://cookinpolish.com/wp-content/uploads/2019/10/IMG_0372-768x1024.jpg");
+    width: 13rem;
+    height: 14rem;
 }
-.three, .six, .eight{
-    display: flex;
-    text-shadow: 1px 1px 2px black;
+.ingredients .dsp-scroll div:nth-child(5) .img-div{
+    background-image: url("https://i.pinimg.com/originals/75/1d/6a/751d6a5af1be82c62d650346121cc4d6.jpg");
+    width: 13rem;
+    height: 14rem;
 }
-footer {
-    background-color: #A19F44;
-    box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
-    position: relative; /* options: fixed, absolute */
+  
+/* FOOTER SECTION  */
+.footer-nav {
+    background-color: #F5B74B;
+    color: #fff;
     width: 100%;
     bottom: 0;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
   }
-.footer-nav{
-    margin: auto;
+.footer-nav ul{
+    list-style-type: none;
   }
-
-
-/* ---RECIPE PAGES--- */
-
-.recipes-container{
-    display: flex;
-    gap: 2em;
-}
-
-.clear-scroll-past{
-    /* background-color: #F38800; */
-    color: #BF3700;
-    border-radius: 1em;
-    flex: 1 2 3em;
-    box-shadow: 1px 1px 1px rgba(255, 255, 255, .3);
-    background-color: #DFA238;
-}
-.clear-scroll-past img{
-    border-radius: 1em; 
-    width: 20rem;
-}
-
-.recipe-page.body{
-	background-image: url("https://thelemonbowl.com/wp-content/uploads/2021/03/plate-of-mexican-street-tacos-horizontal.jpg");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-.clear{
-	height: 60em;
-}
-
-/* .ingredients li, .directions li{
-    list-style-type: none;
-    text-align: left;
-    padding-top: .5em;
-}
-.ingredients li{
-    padding-left: 3em;
-}
-
-.directions li{
-    padding-left: 1.5em;
-} */
-
-
-
-  /* ---LIST PAGES--- */
-.flex-nav#list-nav {
-    padding: 1em;
-    background-image: url("https://th.bing.com/th/id/OIP.KX0f7jqvrcQ5CZkpC92BIAHaHa?w=626&h=626&rs=1&pid=ImgDetMain");
-    box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-#list-page-nav{
-    display: flex;
-    gap: 2em;
-    list-style-type: none;
-    align-items: baseline;
-    padding: 0%;
-    margin-right: 8em;
-    text-shadow: 2px 2px 2px black;
-    font-size: 1.2rem;
-}
-#list-page-nav .nav-item:hover{
-    background-color: #A19F44;
-}
-body#list-page{
-    background-color: #BF3700;
-    background-image: none;
-}
-
-.lists-container{
-    width: 200%;
-    display: flex;
-    gap: 3em;
-}
-.heading{
-    padding-top: .5em;
-    padding-left: 1em;
-}
-.subheading{
-    padding-top: .5em;
-    padding-bottom: .5em;
-    text-align: center;
-}
-.scroll-past{
-    background-color: #F38800;
-    color: white;
-    border-radius: 1em;
-    border-top: 1em solid rgb(243, 136, 0);
-    border-bottom: 1em solid #F38800;
-    flex: 1 1 5em;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
-}
-.list >ul> li{
-list-style-type: none;
-padding-top: .5em;
-padding-left: 2em;
-}
-.description{
-    text-align: center;
-    padding: 2em;
-    margin-left: 2em;
-}
-#last-list{
-    margin-right: 2em;
-}
-.lists-footer{
-    background-image: url("https://th.bing.com/th/id/OIP.KX0f7jqvrcQ5CZkpC92BIAHaHa?w=626&h=626&rs=1&pid=ImgDetMain");
-    /* text-shadow: 3px 3px 3px black; */
-    /* text-shadow: black 1px 0 10px; */
-    background-repeat: repeat;
-    position: fixed; /* options: relative, absolute */
-}
-.lists-footer ul{
-    text-align: center;
-}
-.green-film{
-    background-color: rgba(161, 159, 68, .3);
-}
-
-footer li{
-    text-shadow: black 2px 0 10px;
-    display: inline-block;
-    font-size: .7rem;
+.footer-nav a{
+    color: #fff;
+    text-decoration: none;
 }
