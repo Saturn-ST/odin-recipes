@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+/* TOP NAVIGATION SECTION  */
+.navigation{
+    background-color: #F5B74B;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 1.5rem 5rem;
+}
+.navigation ul a{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+h2{
+    padding-left: 3rem;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+/* ABOUT SECTION  */
+.about{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    color: #F5B74B;
+    padding-top: 6rem;
+}
+.about-img{
+    height: 25rem;
+    width: 20rem;
+    background-image: url("logo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.about p{
+    width: 25rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+/* RECIPES SECTION  */
+.display{
+    background-color: #86BD5F;
+    color: #fff;
+    padding: 2rem 0 6rem;
+    margin: 0;
+}
+.dsp-scroll{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    text-align: center;
+}
+.dsp-scroll div{
+    background-color: #fff;
+    color: #000;
+    height: 20rem;
+    width: 14rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dsp-scroll div p{
+    font-size: .8rem;
+    width: 12rem;
+}
+
+.img-div{
+    background-position: top;
+    background-size: 100%;
+    margin-top: .5rem;
+}
+.recipes .dsp-scroll div:first-child .img-div{
+    background-image: url("https://www.sugarandsoul.co/wp-content/uploads/2019/11/salt-baked-sweet-potatoes-recipe-1-750x1125.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.recipes .dsp-scroll div:nth-child(2) .img-div{
+    background-image: url("https://www.thechunkychef.com/wp-content/uploads/2017/07/Oven-Roasted-Corn-on-the-Cob-5.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.recipes .dsp-scroll div:nth-child(3) .img-div{
+    background-image: url("https://natashaskitchen.com/wp-content/uploads/2018/01/Cheesy-Smashed-Potatoes-3.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.recipes .dsp-scroll div:nth-child(4) .img-div{
+    background-image: url("https://th.bing.com/th/id/OIP.OYvltDBBn87PZPJT4X85TAHaLH?rs=1&pid=ImgDetMain");
+    width: 13rem;
+    height: 14rem;
+}
+.recipes .dsp-scroll div:nth-child(5) .img-div{
+    background-image: url("https://www.loveandotherspices.com/wp-content/uploads/2022/11/air-fryer-pumpkin-3-360x540.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+
+/* ARTICLES SECTIONS  */
+.articles{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://puntoseguido.upc.edu.pe/wp-content/uploads/2020/05/cook-scaled.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    margin: 0;
+}
+.articles h2{
+    padding: 0;
+}
+.articles div{
+    padding-top: 7rem 0;
+    width: 25rem;
+}
+.articles ul{
+    font-size: .8rem;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+.articles ul li:nth-child(2){
+    padding-top: 2rem;
+}
+
+
+/* INGREDIENTS SECTION  */
+.display.ingredients{
+    background-color: #16703C;
+}
+.ingredients .dsp-scroll div:first-child .img-div{
+    background-image: url("https://th.bing.com/th/id/R.7b5616d0b04968063ad625770c7910f9?rik=gZ1%2b%2f5by%2fYmtog&riu=http%3a%2f%2fsafimex.com%2fwp-content%2fuploads%2f2018%2f08%2f20-Exotic-Fruits-You-Must-Try-at-Least-Once-1024x880.png&ehk=oIzCzv0eHbGe37jsfIW2RdmEWm3qRD3ka1mQa4OS5fk%3d&risl=&pid=ImgRaw&r=0");
+    width: 13rem;
+    height: 14rem;
+}
+.ingredients .dsp-scroll div:nth-child(2) .img-div{
+    background-image: url("https://cdn-prod.medicalnewstoday.com/content/images/articles/245/245259/selection-of-nuts-and-seeds.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.ingredients .dsp-scroll div:nth-child(3) .img-div{
+    background-image: url("https://haleo.co.uk/wp-content/uploads/2014/10/NIGHTSHADES-1024x1020.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.ingredients .dsp-scroll div:nth-child(4) .img-div{
+    background-image: url("https://cookinpolish.com/wp-content/uploads/2019/10/IMG_0372-768x1024.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+.ingredients .dsp-scroll div:nth-child(5) .img-div{
+    background-image: url("https://i.pinimg.com/originals/75/1d/6a/751d6a5af1be82c62d650346121cc4d6.jpg");
+    width: 13rem;
+    height: 14rem;
+}
+  
+/* FOOTER SECTION  */
+.footer-nav {
+    background-color: #F5B74B;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+.footer-nav ul{
+    list-style-type: none;
+  }
+.footer-nav a{
+    color: #fff;
+    text-decoration: none;
+}
