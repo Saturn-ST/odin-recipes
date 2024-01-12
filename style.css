@@ -4,6 +4,14 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
+p, li{
+    line-height: 2rem;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+    line-height: 1.2rem;
+}
 
 /* TOP NAVIGATION SECTION  */
 .navigation{
@@ -30,7 +38,7 @@ h1{
     font-size: 3rem;
 }
 h2{
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
     font-weight: 300;
     font-size: 3rem;
 }
@@ -64,6 +72,9 @@ h2{
     padding: 2rem 0 6rem;
     margin: 0;
 }
+.display h2{
+    padding-left: 3rem;
+}
 .dsp-scroll{
     display: flex;
     justify-content: flex-end;
@@ -82,7 +93,6 @@ h2{
     justify-content: flex-start;
 }
 .dsp-scroll div p{
-    font-size: .8rem;
     width: 12rem;
 }
 
@@ -117,7 +127,7 @@ h2{
     height: 14rem;
 }
 
-/* ARTICLES SECTIONS  */
+/* ARTICLES SECTIONS  MAIN PAGE */
 .articles{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://puntoseguido.upc.edu.pe/wp-content/uploads/2020/05/cook-scaled.jpg");
     background-position: center;
@@ -200,3 +210,150 @@ h2{
     color: #000;
     text-decoration: none;
 }
+
+
+/* RECIPE PAGE */
+.recipe-pg{
+    background-color: #BF3700;
+}
+.recipe-pg .bg{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rcp-article{
+    width: 40%;
+}
+.article-img-cont{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.article-img-cont div{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+.article-img-cont div:first-child{
+    background-image: url("https://www.gimmesomeoven.com/wp-content/uploads/2020/03/Baked-Sweet-Potato-Recipe-1-1.jpg");
+    height: 45rem;
+    width: 30rem;
+}
+.article-img-cont div:nth-child(2){
+    background-image: url("https://www.gimmesomeoven.com/wp-content/uploads/2020/03/Baked-Sweet-Potato-Recipe-4-1.jpg");
+    height: 45rem;
+    width: 30rem;
+}
+.article-img-cont div:nth-child(3){
+    background-image: url("https://www.gimmesomeoven.com/wp-content/uploads/2020/06/Baked-Sweet-Potato-Recipe-5-1.jpg");
+    height: 45rem;
+    width: 30rem;
+}
+.article-img-cont div:nth-child(4){
+    background-image: url("https://www.gimmesomeoven.com/wp-content/uploads/2020/06/Baked-Sweet-Potato-Recipe-2-2.jpg");
+    height: 45rem;
+    width: 30rem;
+}
+.article-img-cont div:nth-child(5){
+    background-image: url("https://www.gimmesomeoven.com/wp-content/uploads/2020/06/Baked-Sweet-Potato-Recipe-3-2.jpg");
+    height: 45rem;
+    width: 30rem;
+}
+.rcp-article span{
+    /* font-weight: 300; */
+    font-style: italic;
+}
+
+
+/* RECIPE BOX OF INSTRUCTIONS  */
+.rcp-instructions{
+    border: 5px double #F5B74B;
+    background-color: #fff;
+    width: 40%;
+    margin: 2rem auto;
+}
+.rcp-instructions div{
+    /* border: 5px double #F5B74B; */
+}
+.rcp-instructions div ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.box.one button{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 1rem 5rem;
+}
+
+div .stars{
+    border: none;
+}
+.title{
+    display: flex;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
